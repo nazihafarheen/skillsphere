@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Fundamentals | LearnSphere</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark custom-nav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">← LearnSphere</a>
+    <a class="nav-link text-white" href="index.html#courses">All Courses</a>
+  </div>
+</nav>
+
+<header class="course-hero data-hero">
+  <div class="container">
+    <span class="eyebrow">LEARNING PATH / 03</span>
+    <h1>Data <span>Fundamentals</span></h1>
+    <p>Learn to organize information, understand patterns and communicate insights.</p>
+    <div class="d-flex gap-2 flex-wrap mt-4">
+      <span class="pill">Beginner friendly</span>
+      <span class="pill">4 modules</span>
+      <span class="pill">Data literacy</span>
+    </div>
+  </div>
+</header>
+
+<main class="container py-5">
+  <div class="row g-4">
+    <aside class="col-lg-4">
+      <div class="lesson-sidebar">
+        <h3>Course contents</h3>
+        <p class="text-secondary small">Select a lesson to jump to its content.</p>
+        <a class="lesson-link" href="#lesson1">01. What Is Data?</a>
+        <a class="lesson-link" href="#lesson2">02. Tables and Datasets</a>
+        <a class="lesson-link" href="#lesson3">03. Basic Statistics</a>
+        <a class="lesson-link" href="#lesson4">04. Data Visualization</a>
+        <a class="lesson-link" href="#quiz">05. Knowledge Check</a>
+        <a href="index.html#courses" class="next-course">Explore all learning paths →</a>
+      </div>
+    </aside>
+
+    <div class="col-lg-8">
+      <section class="content-panel mb-4">
+        <span class="eyebrow">YOUR FIRST LESSON</span>
+        <h2>Welcome to Data Fundamentals</h2>
+        <p>
+          Data is information collected about people, objects or events.
+          Learning data fundamentals helps you organize information, identify
+          patterns and make evidence-based decisions.
+        </p>
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/r-uOLxNrNk8"
+            title="Introduction to data analysis"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-note">Video requires an internet connection. Use the lessons below if the video is unavailable.</p>
+      </section>
+
+      <section id="lesson1" class="content-panel lesson-section mb-4">
+        <span class="module-number">MODULE 01</span>
+        <h2>What Is Data?</h2>
+        <p>Data can be numbers, text, dates, images or measurements.</p>
+        <ul>
+          <li><strong>Quantitative data:</strong> Numerical measurements, such as marks or age.</li>
+          <li><strong>Qualitative data:</strong> Categories or descriptions, such as favorite subject.</li>
+          <li><strong>Structured data:</strong> Information organized into rows and columns.</li>
+        </ul>
+        <div class="example-box">
+          Example: A student's test score of 85 is quantitative data.
+          The student's favorite subject, Computer Science, is categorical data.
+        </div>
+      </section>
+
+      <section id="lesson2" class="content-panel lesson-section mb-4">
+        <span class="module-number">MODULE 02</span>
+        <h2>Tables and Datasets</h2>
+        <p>A dataset is a collection of related information. Each row often represents a record, and each column represents a field.</p>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+              <tr><th>Student</th><th>Subject</th><th>Score</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Asha</td><td>Maths</td><td>82</td></tr>
+              <tr><td>Rahul</td><td>Science</td><td>91</td></tr>
+              <tr><td>Meera</td><td>Maths</td><td>76</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>This small example has three records and three fields. Real datasets can contain thousands or millions of records.</p>
+      </section>
+
+      <section id="lesson3" class="content-panel lesson-section mb-4">
+        <span class="module-number">MODULE 03</span>
+        <h2>Basic Statistics</h2>
+        <p>Statistics summarize data so that you can understand it more easily.</p>
+        <ul>
+          <li><strong>Mean:</strong> Add the values and divide by the number of values.</li>
+          <li><strong>Median:</strong> The middle value after sorting the values.</li>
+          <li><strong>Mode:</strong> The value that appears most often.</li>
+          <li><strong>Range:</strong> The largest value minus the smallest value.</li>
+        </ul>
+        <div class="example-box">
+          Scores: 60, 70, 80<br>
+          Mean = (60 + 70 + 80) ÷ 3 = 70<br>
+          Range = 80 − 60 = 20
+        </div>
+      </section>
+
+      <section id="lesson4" class="content-panel lesson-section mb-4">
+        <span class="module-number">MODULE 04</span>
+        <h2>Data Visualization</h2>
+        <p>Charts help people understand data at a glance. This sample CSS bar chart shows illustrative values.</p>
+        <div class="chart-demo">
+          <div class="chart-row">
+            <span>HTML</span><div class="chart-track"><div class="chart-bar bar-html"></div></div><strong>80</strong>
+          </div>
+          <div class="chart-row">
+            <span>CSS</span><div class="chart-track"><div class="chart-bar bar-css"></div></div><strong>65</strong>
+          </div>
+          <div class="chart-row">
+            <span>Data</span><div class="chart-track"><div class="chart-bar bar-data"></div></div><strong>90</strong>
+          </div>
+        </div>
+        <ul class="mt-4">
+          <li>Bar charts compare categories.</li>
+          <li>Line charts show change over time.</li>
+          <li>Pie charts show proportions of a whole.</li>
+        </ul>
+      </section>
+
+      <section id="quiz" class="content-panel lesson-section">
+        <span class="eyebrow">CHECK YOUR KNOWLEDGE</span>
+        <h2>Quick Quiz</h2>
+        <div class="quiz-question">
+          <h4>1. What is a dataset?</h4>
+          <p>A. A collection of related data &nbsp; B. A font style &nbsp; C. A website theme</p>
+        </div>
+        <div class="quiz-question">
+          <h4>2. What is the median of 2, 5, 9?</h4>
+          <p>A. 2 &nbsp; B. 5 &nbsp; C. 9</p>
+        </div>
+        <div class="quiz-question">
+          <h4>3. Which chart is useful for showing trends over time?</h4>
+          <p>A. Line chart &nbsp; B. Logo &nbsp; C. Wireframe</p>
+        </div>
+        <details class="answer-key">
+          <summary>Reveal answer key</summary>
+          <p>1. A — A collection of related data</p>
+          <p>2. B — 5</p>
+          <p>3. A — Line chart</p>
+        </details>
+      </section>
+
+      <div class="d-flex justify-content-between gap-3 flex-wrap mt-4">
+        <a href="uiux.html" class="btn btn-outline-dark rounded-pill">← Previous Course</a>
+        <a href="index.html#courses" class="btn btn-primary rounded-pill">Explore Courses →</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2026 LearnSphere · Discover the story in data.</div>
+</footer>
+
+</body>
+</html>
